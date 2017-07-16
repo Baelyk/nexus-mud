@@ -1,5 +1,5 @@
 - id: 1
-  title: Taste Room 1
+  title: Test Room 1
   description: "A featureless white room. A pitch black void in the shape of archway can be seen on the east side of the room."
   npcs: ["limbo:1" ]
   items:

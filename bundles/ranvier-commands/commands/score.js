@@ -10,7 +10,7 @@ module.exports = (srcPath) => {
     command : (state) => (args, p) => {
       const say = message => B.sayAt(p, message);
 
-      say('<b>' + B.center(60, `${p.name}, level ${p.level} ${p.playerClass.config.name}`, 'green'));
+      say('<b>' + B.center(60, `${p.name}, level ${p.level}`, 'green'));
       say('<b>' + B.line(60, '-', 'green'));
 
       let stats = {
@@ -36,7 +36,8 @@ module.exports = (srcPath) => {
         'Weapon '
       ));
 
-      // class resource
+      // Disable classes
+      /*// class resource
       switch (p.playerClass.id) {
         case 'warrior':
           const energy = {
@@ -63,7 +64,7 @@ module.exports = (srcPath) => {
           B.at(p, B.line(24, ' '));
           break;
       }
-      say(sprintf('%35s', '.' + B.line(22)) + '.');
+      say(sprintf('%35s', '.' + B.line(22)) + '.');*/
 
       B.at(p, sprintf('%37s', '|'));
       const weaponDamage = p.getWeaponDamage();

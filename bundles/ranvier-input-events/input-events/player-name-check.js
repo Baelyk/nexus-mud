@@ -24,7 +24,8 @@ module.exports = (srcPath) => {
           return socket.emit('create-player', socket, args);
         }
 
-        socket.emit('choose-class', socket, args);
+        // No classes, finish player instead
+        socket.emit('finish-player', socket, args); // socket.emit('choose-class', socket, args);
       });
     }
   };

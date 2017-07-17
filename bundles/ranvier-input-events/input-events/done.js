@@ -13,8 +13,9 @@ module.exports = (srcPath) => {
       let player = args.player;
       player.hydrate(state);
 
+      // Disable classes
       // Allow the player class to modify the player (adding attributes, changing default prompt, etc)
-      player.playerClass.setupPlayer(player);
+      // player.playerClass.setupPlayer(player);
 
       player.save();
 

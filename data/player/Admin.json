@@ -41,11 +41,38 @@
   "metadata": {
     "class": "warrior"
   },
-  "playerClass": "warrior",
   "prompt": "[ %health.current%/%health.max% <b>hp</b> %energy.current%/%energy.max% <b>energy</b> ]",
   "quests": {
     "completed": [],
-    "active": []
+    "active": [
+      [
+        "limbo:1",
+        {
+          "state": [
+            {
+              "state": {
+                "count": 0
+              }
+            },
+            {
+              "state": {
+                "count": 0
+              }
+            },
+            {
+              "state": {
+                "equipped": false
+              }
+            },
+            {
+              "state": {
+                "equipped": false
+              }
+            }
+          ]
+        }
+      ]
+    ]
   },
   "role": 2,
   "equipment": {}

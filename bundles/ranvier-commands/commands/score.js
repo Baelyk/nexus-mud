@@ -10,7 +10,7 @@ module.exports = (srcPath) => {
     command : (state) => (args, p) => {
       const say = message => B.sayAt(p, message);
 
-      say('<b>' + B.center(60, `${p.name}, level ${p.level}`, 'green'));
+      say('<b>' + B.center(60, `${p.name} (level ${p.level})`, 'green'));
       say('<b>' + B.line(60, '-', 'green'));
 
       let stats = {
@@ -37,6 +37,7 @@ module.exports = (srcPath) => {
       ));
 
       // Disable classes
+      
       /*// class resource
       switch (p.playerClass.id) {
         case 'warrior':
